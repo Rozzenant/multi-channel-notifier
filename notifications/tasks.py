@@ -5,6 +5,7 @@ import traceback
 
 CHANNELS = ["email", "telegram", "sms"]
 
+
 @shared_task(bind=True, max_retries=3, name="send_notification_task_real")
 def send_notification_task_real(self, notif_id):
     notif = Notification.objects.get(id=notif_id)
@@ -29,4 +30,3 @@ def send_notification_task_real(self, notif_id):
             notif.save()
     notif.status = "failed"
     notif.save()
-
