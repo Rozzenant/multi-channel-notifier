@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+*.env
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+*.sqlite3
+
+# VS Code
+.vscode/
+
+# mypy, pytest, coverage, etc.
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Pipenv
+Pipfile.lock
+
+# celery beat schedule
+celerybeat-schedule
+celerybeat.pid
+
+# Docker
+*.pid
+*.seed
+*.bak
+*.orig
+docker-compose.override.yml
+
+# Local settings
+local_settings.py
+.env
+.env.*
+
+# System
+.DS_Store
+Thumbs.db
+
+# Migrations
+**/migrations/__pycache__/
+**/migrations/*.pyc
