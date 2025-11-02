@@ -9,7 +9,6 @@ venv/
 ENV/
 env/
 env.bak/
-*.env
 
 # Django stuff:
 *.log
@@ -51,7 +50,6 @@ docker-compose.override.yml
 # Local settings
 local_settings.py
 .env
-.env.*
 
 # System
 .DS_Store
