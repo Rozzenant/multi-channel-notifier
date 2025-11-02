@@ -99,12 +99,17 @@ cp .env.example .env
 docker-compose up --build
 ```
 
-Приложение будет доступно:
+Приложение будет доступно (Docker):
+Django API: http://localhost:25100
+Django Admin: http://localhost:25100/admin
+
+Приложение будет доступно (Локально):
 Django API: http://localhost:8000
 Django Admin: http://localhost:8000/admin
 
 ## Тестирование через Postman
 1. Откройте файл test.postman_collection.json в Postman
+
 
 
 
