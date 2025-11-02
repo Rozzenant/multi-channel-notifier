@@ -1,0 +1,38 @@
+services:
+  web:
+    build: .
+    command: sh -c "python manage.py migrate && gunicorn notifier.wsgi:application --bind 0.0.0.0:8000"
+    volumes:
+      - .:/app
+      - ./data:/app/data 
+    ports:
+      - "25100:8000"
+    env_file:
+      - .env
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  celery:
+    build: .
+    command: celery -A notifier worker -l info
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      - redis
+
+  celery-beat:
+    build: .
+    command: celery -A notifier beat -l info
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    depends_on:
+      - redis
