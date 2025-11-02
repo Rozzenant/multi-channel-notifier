@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "4c744dbf-afbb-4be3-9ea4-bd779725c0f8",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30675370",
+		"_collection_link": "https://api111-7676.postman.co/workspace/Notifications-test~a97e682b-b701-42e4-83b0-3bb0192b73bf/collection/30675370-4c744dbf-afbb-4be3-9ea4-bd779725c0f8?action=share&source=collection_link&creator=30675370"
+	},
+	"item": [
+		{
+			"name": "Send notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": 5,\r\n  \"message\": \"Тест уведомления 23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/notifications/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"notifications",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"testuser123\",\r\n  \"email\": \"test@examzple.com\",\r\n  \"password\": \"supersecure123\",\r\n  \"profile\": {\r\n    \"phone\": \"+71234567890\",\r\n    \"telegram_id\": \"123456789\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/register/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get notification info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/notifications/33/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"notifications",
+						"33",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
