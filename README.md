@@ -34,7 +34,7 @@
 1. Клонировать репозиторий:
 
 ```bash
-git clone [https://github.com/your-user/multi-channel-notifier.git](https://github.com/Rozzenant/multi-channel-notifier)
+git clone https://github.com/your-user/multi-channel-notifier.git
 cd multi-channel-notifier
 ```
 
@@ -85,7 +85,7 @@ redis-server.exe redis.windows.conf
 1. Клонируйте репозиторий и перейдите в папку:
 
 ```bash
-git clone [https://github.com/your-user/multi-channel-notifier.git](https://github.com/Rozzenant/multi-channel-notifier)
+git clone https://github.com/your-user/multi-channel-notifier.git
 cd multi-channel-notifier
 ```
 
@@ -105,6 +105,7 @@ Django Admin: http://localhost:8000/admin
 
 ## Тестирование через Postman
 1. Откройте файл test.postman_collection.json в Postman
+
 
 
 
