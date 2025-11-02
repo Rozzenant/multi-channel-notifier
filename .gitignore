@@ -58,3 +58,7 @@ Thumbs.db
 # Migrations
 **/migrations/__pycache__/
 **/migrations/*.pyc
+
+# Black cache
+.pytest_cache/
+.cache/
