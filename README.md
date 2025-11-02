@@ -74,6 +74,7 @@ celery -A notifier worker --pool=solo -l info
 
 Скачать архив с Redis отсюда:
 https://github.com/tporadowski/redis/releases
+
 Затем из папки redis запустите:
 ```bash
 redis-server.exe redis.windows.conf
@@ -104,5 +105,6 @@ Django Admin: http://localhost:8000/admin
 
 ## Тестирование через Postman
 1. Откройте файл test.postman_collection.json в Postman
+
 
 
