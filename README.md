@@ -29,7 +29,7 @@
 
 ---
 
-## Бысткий старт (локально, без Docker)
+## Быстрый старт (локально, без Docker)
 
 1. Клонировать репозиторий:
 
@@ -71,14 +71,16 @@ celery -A notifier worker --pool=solo -l info
 ```
 
 8. Установите и запустите redis:
+
 8.1 Скачать архив с Redis отсюда:
 https://github.com/tporadowski/redis/releases
+
 8.2 Затем из папки redis запустите:
 ```bash
 redis-server.exe redis.windows.conf
 ```
 
-## Бысткий запуск через Docker
+## Быстрый запуск через Docker
 
 1. Клонируйте репозиторий и перейдите в папку:
 
@@ -103,3 +105,4 @@ Django Admin: http://localhost:8000/admin
 
 ## Тестирование через Postman
 1. Откройте файл test.postman_collection.json в Postman
+
