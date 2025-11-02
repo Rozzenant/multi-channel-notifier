@@ -72,10 +72,10 @@ celery -A notifier worker --pool=solo -l info
 
 8. Установите и запустите redis:
 
-Скачать архив с Redis отсюда:
+- Скачать архив с Redis отсюда:
 https://github.com/tporadowski/redis/releases
 
-Затем из папки redis запустите:
+- Затем из папки redis запустите:
 ```bash
 redis-server.exe redis.windows.conf
 ```
@@ -100,15 +100,16 @@ docker-compose up --build
 ```
 
 Приложение будет доступно (Docker):
-Django API: http://localhost:25100
-Django Admin: http://localhost:25100/admin
+- Django API: http://localhost:25100
+- Django Admin: http://localhost:25100/admin
 
 Приложение будет доступно (Локально):
-Django API: http://localhost:8000
-Django Admin: http://localhost:8000/admin
+- Django API: http://localhost:8000
+- Django Admin: http://localhost:8000/admin
 
 ## Тестирование через Postman
 1. Откройте файл test.postman_collection.json в Postman
+
 
 
 
